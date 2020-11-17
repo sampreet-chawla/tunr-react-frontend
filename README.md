@@ -2,7 +2,7 @@
 
 ## About Project
 
-TUNR Project is a SPA (Single Page Application) that displays the songs is a user's Playlist and allows to add / update and delete songs in the playlist. It also shows the favorite songs in the playlist.
+TUNR Project is a SPA (Single Page Application) that displays the songs is a user's Playlist and allows to add / update and delete songs in the playlist. It also shows the favorite songs in the playlist. This project was built in a day's effort.
 
 ## User Stories
 
@@ -15,7 +15,7 @@ TUNR Project is a SPA (Single Page Application) that displays the songs is a use
 ## The project has 2 parts -
 
 1. [Frontend Repo](https://github.com/sampreet-chawla/tunr-react-frontend) - This repo is the frontend repo, deployed in [Netlify](https://tunr-react-frontend.netlify.app/). It was built in React with create-react-app.
-2. [Backend repo](https://github.com/sampreet-chawla/tunr-rails-backend) has the backend code deployed in [Netlify](https://tunr-rails-backend.herokuapp.com/songs). It was built with Ruby on Rails, and uses ActiveRecord to work with PostgreSQL database.
+2. [Backend repo](https://github.com/sampreet-chawla/tunr-rails-backend) has the backend code deployed in [Heroku](https://tunr-rails-backend.herokuapp.com/songs). It was built with Ruby on Rails, and uses ActiveRecord to work with PostgreSQL database.
 
 ### Webpage Snapshot
 
