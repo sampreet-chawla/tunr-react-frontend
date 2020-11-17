@@ -1,0 +1,9 @@
+header h3 {
+  float: right;
+}
+
+hr {
+  width: 90%;
+  color: red;
+  height: 2px;
+}

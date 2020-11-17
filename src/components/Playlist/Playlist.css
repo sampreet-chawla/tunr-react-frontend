@@ -1,0 +1,6 @@
+.playlist-header,
+.song-details {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 2px;
+}
