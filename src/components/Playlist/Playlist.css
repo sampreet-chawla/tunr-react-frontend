@@ -1,6 +1,15 @@
 .playlist-header,
 .song-details {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-space-between;
   padding: 0 2px;
+  margin: 10px;
+  font-family: var(--page-text-font);
 }
+
+.playlist-header {
+  font-weight: 600;
+}
+/* .song-details {
+  background-color: grey;
+} */

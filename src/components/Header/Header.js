@@ -6,8 +6,8 @@ function Header() {
   return (
     <header>
       <h1>TUNR.</h1>
-      <h3>FOR ALL YOUR PLAYLIST NEEDS.</h3>
-      <hr />
+      <h5>FOR ALL YOUR PLAYLIST NEEDS.</h5>
+      <hr className="header-line" />
     </header>
   );
 }

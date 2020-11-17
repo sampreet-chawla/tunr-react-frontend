@@ -56,7 +56,7 @@ function Playlist({ label, songs, deleteSong, updateFavSong }) {
   if (songs && songs.length > 0) {
     return (
       <section>
-        <h3>{label}</h3>
+        <h3 className="section-header">{label}</h3>
         <div className="playlist-header">
           <p>
             Song, <span className="song-time">Time</span>
@@ -65,6 +65,7 @@ function Playlist({ label, songs, deleteSong, updateFavSong }) {
           <p>Favorite?</p>
           <p>Remove</p>
         </div>
+        <hr />
         {loadSongList()}
       </section>
     );

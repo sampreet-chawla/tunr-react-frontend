@@ -21,40 +21,66 @@ function Form(props) {
 
   return (
     <section>
-      <h3>ADD A NEW SONG</h3>
-      <form>
-        <div>
-          TITLE<span className="required">*</span>
+      <h3 className="section-header">ADD A NEW SONG</h3>
+      <form className="form-container">
+        <div className="row">
+          <div className="col-25">
+            <label for="title">
+              {" "}
+              TITLE<span className="required">*</span>
+            </label>
+          </div>
+          <div className="col-75">
+            <input
+              type="text"
+              name="title"
+              id="title"
+              value={formData.title}
+              onChange={handleChange}
+            />
+          </div>
         </div>
-        <div>
-          <input
-            type="text"
-            name="title"
-            value={formData.title}
-            onChange={handleChange}
-          />
+
+        <div className="row">
+          <div className="col-25">
+            <label for="artist">
+              {" "}
+              ARTIST<span className="required">*</span>
+            </label>
+          </div>
+          <div className="col-75">
+            <input
+              type="text"
+              name="artist"
+              id="artist"
+              value={formData.artist}
+              onChange={handleChange}
+            />
+          </div>
         </div>
-        <div>
-          ARTIST<span className="required">*</span>
+
+        <div className="row">
+          <div className="col-25">
+            <label for="time">
+              TIME<span className="required">*</span>
+            </label>
+          </div>
+          <div className="col-75">
+            <input
+              type="text"
+              name="time"
+              id="time"
+              value={formData.time}
+              onChange={handleChange}
+            />
+          </div>
         </div>
-        <input
-          type="text"
-          name="artist"
-          value={formData.artist}
-          onChange={handleChange}
-        />
-        <div>
-          TIME<span className="required">*</span>
+
+        <div className="row">
+          <button id="form-button" onClick={handleAddSong}>
+            ADD NEW SONG
+          </button>{" "}
         </div>
-        <div>
-          <input
-            type="text"
-            name="time"
-            value={formData.time}
-            onChange={handleChange}
-          />
-        </div>
-        <button onClick={handleAddSong}>ADD NEW SONG</button>
       </form>
     </section>
   );

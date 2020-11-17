@@ -6,7 +6,6 @@ import {
   PLAYLIST_TITLE,
   FAVORITE_SONG_LIST_TITLE,
 } from "./../../Constants";
-// import { BrowserRouter as Router, Route } from "react-router-dom";
 import Header from "../Header/Header";
 import Playlist from "../Playlist/Playlist";
 import Form from "../Form/Form";
@@ -14,6 +13,7 @@ import Form from "../Form/Form";
 function App() {
   const [songs, setSongs] = useState([]);
 
+  // Load Playlist
   const getSongs = async () => {
     try {
       const data = await axios.get(`${BACKEND_URL}/songs`);
@@ -27,8 +27,10 @@ function App() {
     getSongs();
   }, []);
 
+  // Favorite Song List
   const favSongs = songs.filter((song) => song.is_fav);
 
+  // Delete Song
   const deleteSong = async (songId) => {
     try {
       const data = await axios.delete(`${BACKEND_URL}/songs/${songId}`);
@@ -39,6 +41,7 @@ function App() {
     }
   };
 
+  // Update Favorite Song
   const updateFavSong = async (song) => {
     try {
       console.log("Adding song: ", song);
@@ -57,6 +60,7 @@ function App() {
     }
   };
 
+  // Add a Song
   const addSong = async (song) => {
     const newSong = { ...song, is_fav: false };
     console.log(newSong);
@@ -77,10 +81,11 @@ function App() {
     }
   };
 
+  ///////////////////////////////
+  /// Single Page Display
+  ////////////////////////////////
   return (
     <div className="App">
-      App Component <i className="fas fa-heart"></i> and{" "}
-      <i className="far fa-heart"></i>
       <Header />
       <main>
         <Playlist

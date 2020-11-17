@@ -1,9 +1,18 @@
-header h3 {
-  float: right;
+header h1 {
+  text-align: left;
+  margin-bottom: 0px;
+  font-family: var(--page-title-font);
+  width: 100%;
 }
 
-hr {
-  width: 90%;
-  color: red;
-  height: 2px;
+header h5 {
+  margin-top: 0px;
+  float: right;
+  font-family: var(--page-text-font);
+}
+
+.header-line {
+  width: 100%;
+  background-color: var(--highlight-color);
+  height: 4px;
 }

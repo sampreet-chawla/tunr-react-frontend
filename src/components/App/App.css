@@ -1,19 +1,28 @@
-/* :root {
-  --site-title-font: 
-
-} */
+:root {
+  --page-title-font: "Anton", sans-serif;
+  --page-text-font: "Inconsolata", monospace;
+  --highlight-color: #a93f55;
+  --title-text-color: #9fb3bb;
+}
 
 * {
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .App {
   text-align: center;
-  padding: 10px;
+  padding: 20px;
+}
+
+.section-header {
+  text-align: left;
+  font-family: var(--page-title-font);
+  letter-spacing: 1px;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #6e84af;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
