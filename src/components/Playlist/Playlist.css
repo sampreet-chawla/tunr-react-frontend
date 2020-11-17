@@ -1,7 +1,8 @@
 .playlist-header,
 .song-details {
-  display: flex;
-  justify-content: space-space-between;
+  display: grid;
+  grid-template-columns: 2fr 1fr 30px 30px;
+  justify-content: space-between;
   padding: 0 2px;
   margin: 10px;
   font-family: var(--page-text-font);

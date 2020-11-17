@@ -62,7 +62,7 @@ function Playlist({ label, songs, deleteSong, updateFavSong }) {
             Song, <span className="song-time">Time</span>
           </p>
           <p>Artist</p>
-          <p>Favorite?</p>
+          <p>Fav</p>
           <p>Remove</p>
         </div>
         <hr />
