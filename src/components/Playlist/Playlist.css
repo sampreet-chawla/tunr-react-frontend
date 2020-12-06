@@ -1,7 +1,11 @@
+.section-container {
+  padding: 10px 0px;
+}
+
 .playlist-header,
 .song-details {
   display: grid;
-  grid-template-columns: 2fr 1fr 30px 30px;
+  grid-template-columns: 2fr 1fr 32px 32px;
   justify-content: space-between;
   padding: 0 2px;
   margin: 10px;
@@ -9,8 +13,15 @@
 }
 
 .playlist-header {
-  font-weight: 600;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
-/* .song-details {
-  background-color: grey;
-} */
+
+.song-details p {
+  width: 100%;
+}
+
+.song-details i {
+  color: var(--highlight-color);
+  cursor: pointer;
+}

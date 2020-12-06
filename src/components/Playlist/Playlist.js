@@ -36,16 +36,18 @@ function Playlist({ label, songs, deleteSong, updateFavSong }) {
       // Build Song List
       return (
         <div className="song-details" key={song.id}>
-          <p>
-            {song.title} <br />
-            <span className="song-time">{song.time}</span>
+          <p style={{ textAlign: "left" }}>
+            {song.title} <span className="song-time">({song.artist})</span>
           </p>
-          <p>{song.artist}</p>
+          <p>{song.time}</p>
           <p>{isFavJSX}</p>
           <p>
-            <button onClick={(e) => handleDeleteSong(e, song.id, song.title)}>
-              X
-            </button>
+            <i
+              className="fa fa-trash"
+              onClick={(e) => handleDeleteSong(e, song.id, song.title)}
+            >
+              {" "}
+            </i>
           </p>
         </div>
       );
@@ -55,15 +57,15 @@ function Playlist({ label, songs, deleteSong, updateFavSong }) {
   // Display songs in Playlist.
   if (songs && songs.length > 0) {
     return (
-      <section>
+      <section className="section-container">
         <h3 className="section-header">{label}</h3>
         <div className="playlist-header">
-          <p>
-            Song, <span className="song-time">Time</span>
+          <p style={{ textAlign: "left", width: "100%" }}>
+            Song <span className="song-time">(Artist)</span>
           </p>
-          <p>Artist</p>
+          <p>Time</p>
           <p>Fav</p>
-          <p>Remove</p>
+          <p>Del</p>
         </div>
         <hr />
         {loadSongList()}
